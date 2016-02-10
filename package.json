@@ -9,6 +9,7 @@
   "author": "",
   "license": "MPL-2.0",
   "dependencies": {
+    "dateformat": "1.0.12",
     "json-stream": "1.0.0",
     "through2": "2.0.1"
   }
