@@ -17,7 +17,9 @@ process.stdin
           path: obj.path,
           code: obj.code,
           t: Math.floor(obj.request_time * 1000),
-          host: obj.hostname
+          host: obj.hostname,
+          uid: (obj.uid || '').substr(-32),
+          dev: (obj.dev || '0123456789abcdeffedcba9876543210').substr(-32)
         }
         next(null, JSON.stringify(stat) + '\n')
       }
